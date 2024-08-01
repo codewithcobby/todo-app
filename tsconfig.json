@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "lib": ["es6"],
+    "allowJs": true,
+    "outDir": "build",
+    "strict": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "target": "es6",
+    "moduleResolution": "Node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": false,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./src/server",
+    "paths": {
+      "@env/*": ["./env/*"],
+      "@model/*": ["./models/*"],
+      "@service/*": ["./services/*"],
+      "@routes/*": ["./routes/*"],
+      "@controllers/*": ["./controllers/*"],
+      "@validation/*": ["./validations/*"],
+      "@routers/*": ["./routers/*"],
+      "@utils/*": ["./utils/*"],
+      "@config/*": ["./config/*"]
+    },
+    "skipLibCheck": true,
+    "noEmit": true,
+    "incremental": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": ["./src/**/*", "config", "v1", "env", "routes", "services", "validations", "index.ts", ".next/types/**/*.ts"],
+  "exclude": ["node_modules", "build", "tests"]
+}

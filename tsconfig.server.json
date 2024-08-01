@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "lib": ["es6"],
+    "allowJs": true,
+    "outDir": "build",
+    "strict": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "target": "es6",
+    "moduleResolution": "Node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": false,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@env/*": ["./env/*"],
+      "@model/*": ["./models/*"],
+      "@service/*": ["./services/*"],
+      "@routes/*": ["./routes/*"],
+      "@controllers/*": ["./controllers/*"],
+      "@validation/*": ["./validations/*"],
+      "@v1/*": ["./api/v1/*"],
+      "@v2/*": ["./api/v2/*"],
+      "@config/*": ["./config/*"]
+    }
+  },
+  "include": ["./src/**/*", "config", "v1", "env", "routes", "services", "validations", "index.ts"],
+  "exclude": ["node_modules", "build", "tests"]
+}
